@@ -16,3 +16,11 @@ let allShadeMilk = (oneShadeMilk, shades)=>{
 
     return oneShadeMilk * this.shades;
 };
+
+// INCOME PER DAY
+const price = 45;
+let incomePerDay = (allShadeMilk, price)=>{
+    
+    return allShadeMilk * price;
+}
+
