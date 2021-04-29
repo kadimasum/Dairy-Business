@@ -16,29 +16,3 @@ let allShadeMilk = (oneShadeMilk, shades)=>{
 
     return oneShadeMilk * this.shades;
 };
-
-// INCOME PER DAY
-const price = 45;
-let incomePerDay = (allShadeMilk, price)=>{
-    
-    return allShadeMilk * price;
-}
-
-// INCOME PER WEEK
-
-function incomePerWeek(incomePerDay){
-    
-    return incomePerDay * 7;
-}
-
-// INCOME PER MONTH
-
-function incomePerMonth(incomePerDay,numberOfDays){
-    return incomePerDay * numberOfDays;
-}
-
-// INCOME PER YEAR
-
-function incomePerYear(incomePerMonth,numberOfMonths){
-    return incomePerMonth * numberOfMonths;
-}
