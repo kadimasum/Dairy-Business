@@ -30,3 +30,15 @@ function incomePerWeek(incomePerDay){
     
     return incomePerDay * 7;
 }
+
+// INCOME PER MONTH
+
+function incomePerMonth(incomePerDay,month.days){
+    return incomePerDay * numberOfDays;
+}
+
+// INCOME PER YEAR
+
+function incomePerYear(incomePerMonth,numberOfMonths){
+    return incomePerMonth * numberOfMonths;
+}
