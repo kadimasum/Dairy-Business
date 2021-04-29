@@ -24,3 +24,9 @@ let incomePerDay = (allShadeMilk, price)=>{
     return allShadeMilk * price;
 }
 
+// INCOME PER WEEK
+
+function incomePerWeek(incomePerDay){
+    
+    return incomePerDay * 7;
+}
