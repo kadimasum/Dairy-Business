@@ -5,13 +5,32 @@ body{
     background-color: rgb(25, 49, 41);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
+    
+}
+
+/* TITLE */
+#title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow:0px 0px 10px rgb(150, 179, 169);
+    background-color: rgb(25, 49, 41);
+    color: white);
+    height: 60px;
+    margin-top: 0px;
+    
+}
+
+.milkProduce{
+    display: flex;
+    
 }
 
 /* FORM */
 
 /* Input and Label */
 
-.formData{
+.formData, {
     width: 46%;
     
 }
@@ -29,9 +48,32 @@ form > div > input[type="number"]{
 
 /* Button */
 form > button {
-
+    margin-left: 20px;
+    margin-bottom: 20px;
     padding: 10px 40px;
-    width: 100%;
+    width: 100%; 
     
-    
+}
+
+form > button[type = "submit"]{
+    margin-top: 20px;
+}
+form > button[type = "submit"], form > button[type = "reset"]{
+    background: none;
+    color: white;
+    border: 1px solid white;
+}
+
+
+/* OUTPUT DISPLAY */
+.outputDisplay{
+width: 46%;
+margin-left: 60px;
+box-shadow:0px 0px 10px rgb(150, 179, 169);
+background-color: rgb(25, 49, 41);
+border-radius: 4px;
+}
+
+#displayTitle{
+    text-align: center;
 }

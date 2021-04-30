@@ -9,41 +9,50 @@
 </head>
 <body>
 
-    <!-- FORM - INPUT RESULTS -->
-    <div class="formData">
-        <form action="submit" onsubmit="produceReport();">
+    <!--  -->
+    <h2 id="title">Milking Farm</h2>
 
-            <div>
-                <label for="shed_A">Shed-A: Milk (Litres)</label>
-                <input id="shed_A" type="number" min="0">
-            </div>
-    
-            <div>
-                <label for="shed_B">Shed-B: Milk (Litres)</label>
-                <input id="shed_B" type="number" min="0">
-            </div>
-    
-            <div>
-                <label for="shed_C">Shed-C: Milk (Litres)</label>
-                <input id="shed_C" type="number" min="0">
-            </div>
-    
-            <div>
-                <label for="shed_D">Shed-D: Milk (Litres)</label>
-                <input id="shed_D" type="number" min="0">
-            </div>
-    
-            <button type="submit">Submit</button>
-            <button type="reset">Reset</button>
-            
-        </form>
+    <div class="milkProduce">
+
+        <!-- FORM - INPUT RESULTS -->
+
+        <div class="formData">
+
+            <form action="submit" onsubmit="produceReport();">
+
+                <div>
+                    <label for="shed_A">Shed-A: Milk (Litres)</label>
+                    <input id="shed_A" type="number" min="0">
+                </div>
+        
+                <div>
+                    <label for="shed_B">Shed-B: Milk (Litres)</label>
+                    <input id="shed_B" type="number" min="0">
+                </div>
+        
+                <div>
+                    <label for="shed_C">Shed-C: Milk (Litres)</label>
+                    <input id="shed_C" type="number" min="0">
+                </div>
+        
+                <div>
+                    <label for="shed_D">Shed-D: Milk (Litres)</label>
+                    <input id="shed_D" type="number" min="0">
+                </div>
+        
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+                
+            </form>
+        </div>
+
+        <!-- OUTPUT RESULTS -->
+        
+        <div class="outputDisplay">
+            <h3 id="displayTitle">Production Summary</h3>
+            <p id="outputData"></p>
+        </div>
     </div>
-
-    <!-- OUTPUT RESULTS -->
-
-    <p id="outputData"></p>
-            
-
     
     
     <script src="app.js"></script>
