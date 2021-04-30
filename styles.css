@@ -1,4 +1,6 @@
 body{
+    margin: 0px;
+    padding: 0px;
     color: white;
     background-color: rgb(25, 49, 41);
     font-family: Arial, Helvetica, sans-serif;
@@ -8,14 +10,28 @@ body{
 /* FORM */
 
 /* Input and Label */
+
+.formData{
+    width: 46%;
+    
+}
 form > div{
     display: flex;
     flex-direction: column;
-    width: 45%;
+    width: 100%;
     padding: 20px;
 }
 
 form > div > input[type="number"]{
-    height: 30px;
+    height: 40px;
     border: 50px;
+}
+
+/* Button */
+form > button {
+
+    padding: 10px 40px;
+    width: 100%;
+    
+    
 }
