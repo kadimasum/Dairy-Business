@@ -2,5 +2,20 @@ body{
     color: white;
     background-color: rgb(25, 49, 41);
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
 }
 
+/* FORM */
+
+/* Input and Label */
+form > div{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    padding: 20px;
+}
+
+form > div > input[type="number"]{
+    height: 30px;
+    border: 50px;
+}
