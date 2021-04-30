@@ -11,26 +11,26 @@
 
     <!-- FORM - INPUT RESULTS -->
     <div class="formData">
-        <form action="submit">
+        <form action="submit" onsubmit="produceReport();">
 
             <div>
                 <label for="shed-A">Shed-A: Milk (Litres)</label>
-                <input type="number" min="0">
+                <input id="shed-A" type="number" min="0">
             </div>
     
             <div>
                 <label for="shed-B">Shed-B: Milk (Litres)</label>
-                <input type="number" min="0">
+                <input id="shed-B" type="number" min="0">
             </div>
     
             <div>
                 <label for="shed-C">Shed-C: Milk (Litres)</label>
-                <input type="number" min="0">
+                <input id="shed-C" type="number" min="0">
             </div>
     
             <div>
                 <label for="shed-D">Shed-D: Milk (Litres)</label>
-                <input type="number" min="0">
+                <input id="shed-D" type="number" min="0">
             </div>
     
             <button type="submit">Submit</button>
@@ -54,7 +54,7 @@
 
     </div>
     
-    
+    <script src="app.js"></script>
 
 </body>
 </html>
