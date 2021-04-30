@@ -14,23 +14,23 @@
         <form action="submit" onsubmit="produceReport();">
 
             <div>
-                <label for="shed-A">Shed-A: Milk (Litres)</label>
-                <input id="shed-A" type="number" min="0">
+                <label for="shed_A">Shed-A: Milk (Litres)</label>
+                <input id="shed_A" type="number" min="0">
             </div>
     
             <div>
-                <label for="shed-B">Shed-B: Milk (Litres)</label>
-                <input id="shed-B" type="number" min="0">
+                <label for="shed_B">Shed-B: Milk (Litres)</label>
+                <input id="shed_B" type="number" min="0">
             </div>
     
             <div>
-                <label for="shed-C">Shed-C: Milk (Litres)</label>
-                <input id="shed-C" type="number" min="0">
+                <label for="shed_C">Shed-C: Milk (Litres)</label>
+                <input id="shed_C" type="number" min="0">
             </div>
     
             <div>
-                <label for="shed-D">Shed-D: Milk (Litres)</label>
-                <input id="shed-D" type="number" min="0">
+                <label for="shed_D">Shed-D: Milk (Litres)</label>
+                <input id="shed_D" type="number" min="0">
             </div>
     
             <button type="submit">Submit</button>
@@ -39,20 +39,12 @@
         </form>
     </div>
 
-    <!-- TABLE - OUTPUT RESULTS -->
+    <!-- OUTPUT RESULTS -->
 
-    <div class="tableResults">
+    <p id="outputData"></p>
+            
 
-        <table>
-            <tr>
-                <th>Results</th>
-            </tr>
-            <tr>
-                <td id="outputData"></td>
-            </tr>
-        </table>
-
-    </div>
+    
     
     <script src="app.js"></script>
 
