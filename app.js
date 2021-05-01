@@ -21,7 +21,11 @@ function produceReport(){
 
     dailyIncome = sumData * 45;
 
-    document.getElementById("outputData").innerHTML += "<p>Your dailyIncome " + dailyIncome + " </p>";
-    
+    document.getElementById("outputData").innerHTML += "<p>Your daily income Ksh. " + dailyIncome + " </p>";
+
+
+    weeklyIncome = dailyIncome * 7;
+
+    document.getElementById("outputData").innerHTML += "<p>Your weekly Income Ksh. " + weeklyIncome + " </p>";
 }
 
