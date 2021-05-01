@@ -17,5 +17,10 @@ function produceReport(){
     document.getElementById("outputData").innerHTML += "<p>Your production in shed D is " + data.shed_D + " litres per day</p>";
 
     document.getElementById("outputData").innerHTML += "<p>Your total production per day is " + sumData + " litres per day</p>";
+    
+
+    function  dailyIncome(sumData){return sumData * 45};
+
+    document.getElementById("outputData").innerHTML += "<p>Your dailyIncome " + dailyIncome + " </p>";
 }
 
