@@ -23,10 +23,13 @@ function produceReport(){
 
     document.getElementById("outputData").innerHTML += "<p>Your total daily income is Ksh. " + dailyIncome + " </p>";
 
+    document.getElementById("outputData").innerHTML += "<hr>"
 
     weeklyIncome = dailyIncome * 7;
 
     document.getElementById("outputData").innerHTML += "<p>Your total weekly income is Ksh. " + weeklyIncome + " </p>";
+
+    document.getElementById("outputData").innerHTML += "<hr>"
 
 
     incomeJanuary = dailyIncome * 31;
@@ -42,7 +45,6 @@ function produceReport(){
     incomeNovember = dailyIncome * 30;
     incomeDecember = dailyIncome * 31;
 
-   
      
     document.getElementById("outputData").innerHTML += "<p> Your total income for January is Ksh. " + incomeJanuary + " </p>"
     document.getElementById("outputData").innerHTML += "<p> Your total income for February is Ksh. " + incomeFebruary + " </p>"
@@ -57,6 +59,8 @@ function produceReport(){
     document.getElementById("outputData").innerHTML += "<p> Your total income for November is Ksh. " + incomeNovember + " </p>"
     document.getElementById("outputData").innerHTML += "<p> Your total income for December is Ksh. " + incomeDecember + " </p>"
 
+
+    document.getElementById("outputData").innerHTML += "<hr>"
 
     incomeInLeapYear = dailyIncome * 366;
 
