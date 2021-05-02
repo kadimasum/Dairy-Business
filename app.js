@@ -141,7 +141,19 @@ function produceReport(){
     document.getElementById("outputData").innerHTML += "<p>December: At price = Ksh. 45, you earn: Ksh. " + incomeDecember + ". At price = 49.60, you earn Ksh. " + Math.round(newIncomeDecember) + ". The difference, rounded off to the nearest value, is Ksh. " + Math.round(incomeDecemberDifference) + ".</p>";
     document.getElementById("outputData").innerHTML += "<Br>"
 
-    // END OF CODE.
+    
+}
+
+// RESET FUNCTION
+
+function resetPage(){
+
+
+    document.getElementById("outputData").remove("innerHTML");
+
+
+
+
 }
 
 
