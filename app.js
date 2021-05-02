@@ -11,6 +11,8 @@ function produceReport(){
 
     let sumData = data.shed_A + data.shed_B + data.shed_C + data.shed_D;
 
+    document.getElementById("outputData").innerHTML += "<Br>"
+
     document.getElementById("outputData").innerHTML += "<p>Your production in shed A is " + data.shed_A + " litres per day</p>";
     document.getElementById("outputData").innerHTML += "<p>Your production in shed B is " + data.shed_B + " litres per day</p>";
     document.getElementById("outputData").innerHTML += "<p>Your production in shed C is " + data.shed_C + " litres per day</p>";
@@ -21,6 +23,10 @@ function produceReport(){
 
     dailyIncome = sumData * 45;
 
+    document.getElementById("outputData").innerHTML += "<Br>"
+
+    document.getElementById("outputData").innerHTML += "<hr>"
+
     document.getElementById("outputData").innerHTML += "<p>Your total daily income is Ksh. " + dailyIncome + " </p>";
 
     document.getElementById("outputData").innerHTML += "<hr>"
@@ -30,6 +36,8 @@ function produceReport(){
     document.getElementById("outputData").innerHTML += "<p>Your total weekly income is Ksh. " + weeklyIncome + " </p>";
 
     document.getElementById("outputData").innerHTML += "<hr>"
+
+    document.getElementById("outputData").innerHTML += "<Br>"
 
 
     incomeJanuary = dailyIncome * 31;
@@ -60,13 +68,17 @@ function produceReport(){
     document.getElementById("outputData").innerHTML += "<p> Your total income for December is Ksh. " + incomeDecember + " </p>"
 
 
+    document.getElementById("outputData").innerHTML += "<Br>"
+
     document.getElementById("outputData").innerHTML += "<hr>"
 
     incomeInLeapYear = dailyIncome * 366;
 
     document.getElementById("outputData").innerHTML += "<p>Your total income in a leap year is Ksh. " + incomeInLeapYear + " </p>";
 
+    document.getElementById("outputData").innerHTML += "<hr>"
 
+    document.getElementById("outputData").innerHTML += "<Br>"
 }
 
 
