@@ -84,7 +84,7 @@ font-size: 16px;
 }
 
 /* TABLE */
-table, th, td{
+/* table, th, td{
     border: 1px solid white;
     border-collapse: collapse;
     text-align: center;
@@ -92,4 +92,4 @@ table, th, td{
 
 th{
     font-weight: 700;
-}
+} */
