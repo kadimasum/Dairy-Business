@@ -144,6 +144,8 @@ function produceReport(){
     
 }
 
+
+
 // RESET FUNCTION
 
 function resetPage(){
