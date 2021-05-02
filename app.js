@@ -2,7 +2,7 @@ function produceReport(){
 
     event.preventDefault();
 
-    let data = {};
+    let data = [];
 
     data["shed_A"] = parseInt(document.getElementById("shed_A").value);
     data["shed_B"] = parseInt(document.getElementById("shed_B").value);
@@ -21,11 +21,31 @@ function produceReport(){
 
     dailyIncome = sumData * 45;
 
-    document.getElementById("outputData").innerHTML += "<p>Your daily income Ksh. " + dailyIncome + " </p>";
+    document.getElementById("outputData").innerHTML += "<p>Your total daily income is Ksh. " + dailyIncome + " </p>";
 
 
     weeklyIncome = dailyIncome * 7;
 
-    document.getElementById("outputData").innerHTML += "<p>Your weekly Income Ksh. " + weeklyIncome + " </p>";
+    document.getElementById("outputData").innerHTML += "<p>Your total weekly income is Ksh. " + weeklyIncome + " </p>";
+
+
+    incomeJanuary = dailyIncome * 31;
+    incomeFebruary = dailyIncome * 29;
+    incomeMarch = dailyIncome * 31;
+    incomeApril = dailyIncome * 30;
+    incomeMay = dailyIncome * 31;
+    incomeJune = dailyIncome * 30;
+    incomeJuly = dailyIncome * 31;
+    incomeAugust = dailyIncome * 31;
+    incomeSeptember = dailyIncome * 30;
+    incomeOctober = dailyIncome * 31;
+    incomeNovember = dailyIncome * 30;
+    incomeDecember = dailyIncome * 31;
+
+    incomeInLeapYear = dailyIncome * 366;
+
+    document.getElementById("outputData").innerHTML += "<p>Your total income in a leap year is Ksh. " + incomeInLeapYear + " </p>";
+
 }
+
 
