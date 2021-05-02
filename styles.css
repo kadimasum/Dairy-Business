@@ -27,7 +27,11 @@ body{
 
 
 .milkProduce{
+    width: 90%;
+    margin: 0px auto;
     display: flex;
+    justify-content: center;
+    
     
 }
 
@@ -36,29 +40,45 @@ body{
 /* Input and Label */
 
 .formData {
-    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
     margin-right: 20px;
+    box-shadow: 0px 0px 10px rgb(150, 179, 169);
+    border-radius: 4px;
+    font-size: 16px;
+       
+}
+
+.formData   #sheds{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
     
 }
 
-form > div{
-    display: flex;
-    flex-direction: column;
+.formData > form{
     width: 100%;
     padding: 20px;
+    
 }
 
 form > div > input[type="number"]{
     height: 30px;
-    width: 300px;
+    
+   
+    
 }
 
 /* Button */
 form > button {
-    margin-left: 20px;
+    
     margin-bottom: 20px;
-    padding: 10px 40px;
-    width: 300px;
+    padding: 10px 20px;
+    width: 100%;
     
 }
 
@@ -69,7 +89,7 @@ form > button[type = "submit"], form > button[type = "reset"]{
     background: none;
     color: white;
     border: 1px solid white;
-}
+} 
 
 
 /* OUTPUT DISPLAY */
@@ -80,8 +100,8 @@ form > button[type = "submit"], form > button[type = "reset"]{
     background-color: rgb(25, 49, 41);
     border-radius: 4px;
     font-size: 16px;
-    margin-right: 20px;
     height: 550px;
+    
 }
 
 #displayTitle{
