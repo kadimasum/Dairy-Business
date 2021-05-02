@@ -9,54 +9,60 @@
 </head>
 <body>
 
-    <!--  -->
-    <h2 id="title">Dairy Farm</h2>
+    <!-- SECTION -->
 
-    <div class="milkProduce">
+    <section>
 
-        <!-- FORM - INPUT RESULTS -->
+        <h2 id="title">Dairy Farm</h2>
 
-        <div class="formData">
-
-            <form action="submit" onsubmit="produceReport();">
-
-                <div>
-                    <label for="shed_A">Shed-A: Milk (Litres)</label>
-                    <input id="shed_A" type="number" min="0">
-                </div>
-        
-                <div>
-                    <label for="shed_B">Shed-B: Milk (Litres)</label>
-                    <input id="shed_B" type="number" min="0">
-                </div>
-        
-                <div>
-                    <label for="shed_C">Shed-C: Milk (Litres)</label>
-                    <input id="shed_C" type="number" min="0">
-                </div>
-        
-                <div>
-                    <label for="shed_D">Shed-D: Milk (Litres)</label>
-                    <input id="shed_D" type="number" min="0">
-                </div>
-        
-                <button type="submit">Submit</button>
-                <button id="reset" type="reset">Reset</button>
-                
-            </form>
-        </div>
-
-        <!-- OUTPUT RESULTS -->
-        
-        <div class="outputDisplay">
-            <h3 id="displayTitle">Production Summary</h3>
-            <hr>
-            <p id="outputData"></p>
-
-            <!-- OPTIONAL CHALLENGE -->
-        </div>
-    </div>
+        <div class="milkProduce">
     
+            <!-- FORM - INPUT RESULTS -->
+    
+            <div class="formData">
+    
+                <form action="submit" onsubmit="produceReport();">
+    
+                    <div>
+                        <label for="shed_A">Shed_A: Milk (Litres)</label>
+                        <input id="shed_A" type="number" min="0">
+                    </div>
+            
+                    <div>
+                        <label for="shed_B">Shed_B: Milk (Litres)</label>
+                        <input id="shed_B" type="number" min="0">
+                    </div>
+            
+                    <div>
+                        <label for="shed_C">Shed_C: Milk (Litres)</label>
+                        <input id="shed_C" type="number" min="0">
+                    </div>
+            
+                    <div>
+                        <label for="shed_D">Shed_D: Milk (Litres)</label>
+                        <input id="shed_D" type="number" min="0">
+                    </div>
+            
+                    <button type="submit">Submit</button>
+                    <button id="reset" type="reset">Reset</button>
+                    
+                </form>
+            </div>
+    
+            <!-- OUTPUT RESULTS -->
+            
+            <div class="outputDisplay">
+                <h3 id="displayTitle">Production Summary</h3>
+                <hr>
+                <p id="outputData"></p>
+    
+                <!-- OPTIONAL CHALLENGE -->
+            </div>
+        </div>
+    
+        
+    </section>
+   
     
     <script src="app.js"></script>
 

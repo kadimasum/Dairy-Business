@@ -5,6 +5,8 @@ body{
     background-color: rgb(25, 49, 41);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
+    box-sizing: border-box;
+    
     
 }
 
@@ -15,11 +17,14 @@ body{
     align-items: center;
     box-shadow:0px 0px 10px rgb(150, 179, 169);
     background-color: rgb(25, 49, 41);
-    color: white);
+    color: white;
     height: 60px;
     margin-top: 0px;
     
+    
+    
 }
+
 
 .milkProduce{
     display: flex;
@@ -30,10 +35,12 @@ body{
 
 /* Input and Label */
 
-.formData, {
-    width: 46%;
+.formData {
+    width: 40%;
+    margin-right: 20px;
     
 }
+
 form > div{
     display: flex;
     flex-direction: column;
@@ -43,7 +50,7 @@ form > div{
 
 form > div > input[type="number"]{
     height: 30px;
-    border: 50px;
+    width: 300px;
 }
 
 /* Button */
@@ -51,7 +58,7 @@ form > button {
     margin-left: 20px;
     margin-bottom: 20px;
     padding: 10px 40px;
-    width: 100%; 
+    width: 300px;
     
 }
 
@@ -67,12 +74,14 @@ form > button[type = "submit"], form > button[type = "reset"]{
 
 /* OUTPUT DISPLAY */
 .outputDisplay{
-width: 54%;
-margin-left: 60px;
-box-shadow:0px 0px 10px rgb(150, 179, 169);
-background-color: rgb(25, 49, 41);
-border-radius: 4px;
-font-size: 16px;
+    overflow: auto;
+    width: 50%;
+    box-shadow:0px 0px 10px rgb(150, 179, 169);
+    background-color: rgb(25, 49, 41);
+    border-radius: 4px;
+    font-size: 16px;
+    margin-right: 20px;
+    height: 550px;
 }
 
 #displayTitle{
@@ -83,13 +92,3 @@ font-size: 16px;
     padding: 0px 20px;
 }
 
-/* TABLE */
-/* table, th, td{
-    border: 1px solid white;
-    border-collapse: collapse;
-    text-align: center;
-}
-
-th{
-    font-weight: 700;
-} */
