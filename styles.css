@@ -110,3 +110,20 @@ form > button[type = "submit"], form > button[type = "reset"]{
     padding: 0px 20px;
 }
 
+@media screen and (max-width: 760px) {
+    .milkProduce{
+        display: flex;
+        flex-direction: column;  
+    }
+
+    .formData {
+        width: 100%;
+        margin-bottom: 20px; 
+    }
+
+    .outputDisplay{
+        width: 100%;
+       
+    }
+    
+}
